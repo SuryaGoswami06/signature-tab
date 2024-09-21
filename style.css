@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+body,html{
+    height:100%;
+    width:100%;
+    font-family: 'montserrat';
+}
+body{
+    display: grid;
+    place-items: center;
+}
+ul{
+    display: flex;
+}
+li{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+}
+button{
+    background-color: none;
+}
+
+
+#container{
+    width: 800px;
+    margin:0 10px;
+}
+#menu li{
+    width: 100%;
+    input{
+        cursor: pointer;
+    }
+    input[type="color"]{
+        width: 100%;
+        padding: 2px;
+        height: 35px;
+        background: none;
+    }
+    input[type="number"]{
+        width: 100%;
+        padding: 7px;
+    }
+}
+#menu li:not(:last-child){
+    margin-right: 20px;
+}
+#container >*{
+    margin-bottom: 10px;
+}
+#workSpace{
+    border:1px solid #000;
+}
+#afterDraw button{
+    background-color: #000;
+    color: #fff;
+    padding: 7px;
+    font-size: 14px;
+    width: 100%;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+#afterDraw li{
+    width: 100%;
+}
+#afterDraw li:not(:last-child){
+    margin-right: 20px;
+}
+
+@media screen and (max-width:844px){
+    #container{
+        width: 600px;
+    }
+}
+@media screen and (max-width:620px){
+    #container{
+        width: 355px;
+    }
+}
